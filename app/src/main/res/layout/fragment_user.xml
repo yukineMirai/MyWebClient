@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include android:id="@+id/titlebar1"
+        layout="@layout/titlebar"
+        />
+    <TextView
+
+        android:id="@+id/tv_login_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="iiiiiiiiweweassadsadasii"
+        android:textSize="30px"
+        android:textColor="@color/colorAccent"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="账号"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/et_email"
+           android:inputType="textEmailAddress"
+            android:background="@drawable/edit_bg"
+            android:layout_centerInParent="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/et_password"
+            android:inputType="numberPassword"
+            android:background="@drawable/edit_bg"
+            android:layout_below="@id/et_email"
+            />
+        <!-- android:layout_centerInParent="true"-->
+        <Button
+            android:id="@+id/bn_logon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
